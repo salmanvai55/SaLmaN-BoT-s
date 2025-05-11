@@ -56,25 +56,18 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("চলে এসেছি আমি পিচ্চি নয়ন তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
-<------------------------------>  
-BOT CONNECTED SUCCESFUL !!! 
-
-APPROVAL ALLOW IN THIS GROUP!!!
-<------------------------------>\n\nTO VIEW ANY COMMAND Use👉${global.config.PREFIX}help\nSee command👉 ${global.config.PREFIX}command
-\n\EXAMPLE:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
-<------------------------------>
-AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
-
-DEVELOPER :Mohammad Nayan 
-
-🟣Facebook Account Link: 
-
-https://www.facebook.com/www.xnxx.com169
-
-🔵WHATSAPP NUMBER: wa.me/+8801615298449
-
-🟢SUPPORT EMAIL: www.mdmnnm2004@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+    return api.sendMessage("চৃঁলেৃঁ এ্ঁসে্ঁছি্ঁ আ্ঁমি্ঁ পি্ঁচ্ছি্ঁ ফা্ঁর্ঁহা্ঁন্ঁ এ্ঁরৃঁ বৃঁটৃঁ তো্ঁমা্ঁদে্ঁর্ঁ মা্ঁঝে্ঁ!🤖🤭!", event.threadID, () =>api.sendMessage({body:`[🌺আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ🌺]
+____________________________________
+🤖
+BOT CONNECTED!!! 
+adding in the group chat successfully!!!
+🙈 হায় বাবুরা শয়তানি করার জন্য এড দিছত তাই না 🐒
+____________________________________\n\nযেকোনো কমান্ড দেখতে ${global.config.PREFIX}help ব্যবহার করুন
+\n\উদাহারণ:\n${global.config.PREFIX}mark (text)\n${global.config.PREFIX}lexi (text)\n${global.config.PREFIX}trump (text)\n${global.config.PREFIX}info
+____________________________________
+আর যেকোনো অভিযোগ অথবা হেল্প এর জন্য আমার বস 
+🥰👉𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍👈💚🌻 কে নক করতে পারেন-🥰🌺 
+🌻𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐋𝐈𝐍𝐊🌻:-                               👇[https://www.facebook.com/profile.php?id=61550529403710,🌺🤟]`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
@@ -175,7 +168,7 @@ https://www.facebook.com/www.xnxx.com169
         abx.push(fs.createReadStream(__dirname + `/Nayan/join/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
-      (typeof threadData.customJoin == "undefined") ? msg = `Hello {name}\nWelcome to {threadName}\nyou're the {soThanhVien}th member on this group please enjoy"\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = `\n═════🌺𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍🌺═════\n   ╔════•|      ✿      |•════╗\n     💐আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💐\n     ╚════•|      ✿      |•════╝\n\n╰┈➤W⃠E⃠L⃠L⃠ C⃠O⃠M⃠E⃠➤\n\n                ╰┈➤𝐍𝐄𝐖➤\n\n           ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n             ╰┈➤{name}➤\n\n      ༄✺আ্ঁপ্ঁনা্ঁকে্ঁ আ্ঁমা্ঁদে্ঁর্ঁ✺࿐\n                  {threadName}\n\n 🌺🌿🌸—এ্ঁর্ঁ প্ঁক্ষ্ঁ🍀থে্ঁকে্ঁ🍀—🌸🌿\n\n         🌿_ভা্ঁলো্ঁবা্ঁসা্ঁ_অ্ঁভি্ঁরা্ঁম্ঁ_🌿\n\n༄✺আঁপঁনিঁ এঁইঁ গ্রুঁপেঁর {soThanhVien} নঁং মে্ঁম্বা্ঁরঁ ࿐\n\n╔═━────━▒•✠•❀•✠• ▒━────━═╗\n╰┈➤          𝐁𝐎𝐓'𝐬 𝐎𝐖𝐍𝐄𝐑➤\n\n                               ☟                     \n\n✵༆______𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍______✵༆\n┗━━━━ ✦❘༻•✠•❀•✠•༺❘✦ ━━━━━┛\n🍒═══════❤💛💙💜💚═══════🍒\n\n▓▓▓▓▓▓▓▓\n\nআমাদের সাথে সময় দেওয়া ও পাশে থাকার অনুরোধ রইলো !!-🍂🌺🥀\n\n🦋༎❤❤༎\n\nⵗⵗ̥̥̊̊ⵗ̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̥̥̥̥̥̊̊ⵗ̥̥̥̥̥̥̥̥̥̥̥ⵗ̥̥̥̥̥̥̥̥̥̥̊̊ⵗ̥̥̥̥̥̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̊̊̊ⵗ̥̥̊̊ \n\n\n\n🦋║ლ💞 💞 ლ║🦋\n\n💐☘-ধন্যবাদ প্রিয়-❤🤍\n\n\n\n𝐁𝐎𝐓-𝐎𝐖𝐍𝐄𝐑: __𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐋𝐈𝐍𝐊__👇\n\https://www.facebook.com/profile.php?id=61550529403710 \n\n👉[{time} - {thu}👈` : msg = threadData.customJoin;
       var nameAuthor = await Users.getNameUser(event.author)
       msg = msg
         .replace(/\{iduser}/g, iduser.join(', '))
