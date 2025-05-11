@@ -207,7 +207,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("সরি বস মাফ করে দেন আর এমন ভুল হবে না🥺🙏", threadID);
    };
 
-   if ((event.body.toLowerCase() == "Mim") || (event.body.toLowerCase() == "mim")) {
+   if ((event.body.toLowerCase() == "faiza") || (event.body.toLowerCase() == "Faiza")) {
      return api.sendMessage("বাড়িতে খাই ঝাটার বাড়ি, ফেসবুকে সে অ্যাটিটিউড নারী,😒🤣", threadID);
    };
 
@@ -319,7 +319,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("️বাই তো বললে সোজা অফলাইনে যাও অন্য কারো ইনবক্সে যেও না গেলে আমার বস্ _𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 এর_ ইনবক্সে যাও", threadID);
    };
 
-   if ((event.body.toLowerCase() == "মাহি") || (event.body.toLowerCase() == "মিম")) {
+   if ((event.body.toLowerCase() == "মাহি") || (event.body.toLowerCase() == "ফাইজা")) {
      return api.sendMessage("️বাড়িতে খাই ঝাটার বাড়ি, ফেসবুকে সে অ্যাটিটিউড নারী,😒🤣", threadID);
    };
 
@@ -396,7 +396,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("-আলহামদুলিল্লাহ-🌺-অনেক অনেক ভালো আছে তোমার বাসার সবাই কেমন আছে-💝🌻", threadID);
    };
   
-  if (event.body.indexOf("বট") == 0 || (event.body.indexOf("pori") == 0)) {
+  if (event.body.indexOf("বট") == 0 || (event.body.indexOf("Pori") == 0)) {
     var msg = {
       body: `${name}, ${rand}`
     }
