@@ -1,46 +1,55 @@
 module.exports.config = {
   name: "random",
-  version: "0.0.2",
+  version: "1.0.0",
   permission: 0,
+  credits: "farhan",
+  description: "Random sad video",
   prefix: true,
-  credits: "Nayan",
-  description: "sad video",
-  category: "admin",
-  usages: "",
-    cooldowns: 5,
+  category: "Media",
+  usages: "video",
+  cooldowns: 5,
+  dependencies: {
+    "axios": "",
+    "fs-extra": "",
+    "request": ""
+  }
 };
 
+module.exports.run = async ({ api, event, args, client, Users, Threads, __GLOBAL, Currencies }) => {
+  const axios = global.nodemodule["axios"];
+  const request = global.nodemodule["request"];
+  const fs = global.nodemodule["fs-extra"];
 
+  var hi = ["--যারা ফুলকে ভালোবাসে তারা নিজেরাই এক একটা ফুল 💕🌸 --𝐅𝐚𝐫𝐡𝐚𝐧-𝐈𝐬𝐥𝐚𝐦--"];
+  var know = hi[Math.floor(Math.random() * hi.length)];
+  var link = [
+    "https://drive.google.com/uc?id=13sAsW5wQ3qhNfAMuJBLJD6NQnw8mexou",
+    "https://drive.google.com/uc?id=136oqsV5ff-DhKScw4TRmv0iefQRvdEDc",
+    "https://drive.google.com/uc?id=13Hbrq6Qrc5Pd2_PVB9XzMiHsx0lhLCPF",
+    "https://drive.google.com/uc?id=13-KSN4yUN8TdVZm4OtVUs0qbVYefPB4F",
+    "https://drive.google.com/uc?id=13WMlu9HeUjMPeB9iVLjbIGyCtPDn1_XW",
+    "https://drive.google.com/uc?id=13rGGm97uus5SSj3QLzBxQMje8j0CZIes",
+    "https://drive.google.com/uc?id=13Q85KfF5gQnclgDwoC7iUiEcwDKstNrb",
+    "https://drive.google.com/uc?id=142Y95z79WtfVnjA5WH9BXu1n7IAVAANS",
+    "https://drive.google.com/uc?id=13yjHB5Ty44vyp8SGqBnK90KF4242MA1d",
+    "https://drive.google.com/uc?id=13YLFXAzq4lW6wacISzqAoSw2sHe-aXL_",
+    "https://drive.google.com/uc?id=138wEfuuPZm-S9pONKboQowMMY_tK4RTX",
+    "https://drive.google.com/uc?id=13-YbLYqQBA2d9bf46GGqp80vsL5WnOdz",
+    "https://drive.google.com/uc?id=138iWDaltcR6Q9C2ZlNiFomicSSBbUzXu",
+    "https://drive.google.com/uc?id=13abtid-Du_ZJtRcpT6qUhW5mF4NyI61Y",
+    "https://drive.google.com/uc?id=13tbsM4z2NZAAowAg4DBJHfPhjFufPtpB",
+    "https://drive.google.com/uc?id=13cel_8uVelO2mcolfGO4j476gFCpuoHn",
+    "https://drive.google.com/uc?id=130Tv10j7JPZNaFP5RzuJ4fs1STzxLcpa",
+    "https://drive.google.com/uc?id=139c3KZsKzpFzhBpVUJI14unIyOTvdbXq",
+    "https://drive.google.com/uc?id=13bqtT4Ee7jKsQ9Lt7NG7qenKeKCz51Ji",
+    "https://drive.google.com/uc?id=14MaSmAOGu88k3pb7VeWHvX9-3PoHoEOn",
+    "https://drive.google.com/uc?id=14_6TY5WIGQ0hunYrJbNgavVEFRDsAgbj",
+    "https://drive.google.com/uc?id=14MaSmAOGu88k3pb7VeWHvX9-3PoHoEOn"
+  ];
 
+  var callback = () => {
+    api.sendMessage({ body: `「 ${know} 」`, attachment: fs.createReadStream(__dirname + "/cache/15.mp4") }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/15.mp4"));
+  };
 
-
-module.exports.run = async function({ api, event, args }) {
-    const axios = require("axios")
-    const request = require("request")
-    const fs = require("fs-extra")
-  const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN/Nayan/main/api.json')
-  const n = apis.data.api;
-    const res = await axios.get(`${n}/video/mixvideo`);
-    var data = res.data.url;
-    var msg = [];
-    let video = `${res.data.url.url}`;
-  let name = `${res.data.url.name}`;
-    let cp = `${res.data.cp}`
-  let ln = `${res.data.length}`
-
-    let videos = (await axios.get(`${video}`, {
-        responseType: 'arraybuffer'
-    })).data;
-    fs.writeFileSync(__dirname + "/cache/video.mp4", Buffer.from(videos, "utf-8"));
-    var allimage = [];
-    allimage.push(fs.createReadStream(__dirname + "/cache/video.mp4"));
-
-    {
-        msg += `${cp}\n\n𝐓𝐨𝐭𝐚𝐥 𝐕𝐢𝐝𝐞𝐨𝐬: [${ln}]\n𝐀𝐝𝐝𝐞𝐝 𝐓𝐡𝐢𝐬 𝐕𝐢𝐝𝐞𝐨 𝐓𝐨 𝐓𝐡𝐞 𝐀𝐩𝐢 𝐁𝐲 [𝐅𝐚𝐫𝐡𝐚𝐧-𝐈𝐬𝐥𝐚𝐦]`
-    }
-
-    return api.sendMessage({
-        body: msg,
-        attachment: allimage
-    }, event.threadID, event.messageID);
-}
+  return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/15.mp4")).on("close", () => callback());
+};
