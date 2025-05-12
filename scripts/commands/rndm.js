@@ -35,16 +35,15 @@ module.exports.run = async ({ api, event, args, client, Users, Threads, __GLOBAL
     "https://drive.google.com/uc?id=13YLFXAzq4lW6wacISzqAoSw2sHe-aXL_",
     "https://drive.google.com/uc?id=138wEfuuPZm-S9pONKboQowMMY_tK4RTX",
     "https://drive.google.com/uc?id=13-YbLYqQBA2d9bf46GGqp80vsL5WnOdz",
-    "https://drive.google.com/uc?id=138iWDaltcR6Q9C2ZlNiFomicSSBbUzXu",
-    "https://drive.google.com/uc?id=13abtid-Du_ZJtRcpT6qUhW5mF4NyI61Y",
-    "https://drive.google.com/uc?id=13tbsM4z2NZAAowAg4DBJHfPhjFufPtpB",
-    "https://drive.google.com/uc?id=13cel_8uVelO2mcolfGO4j476gFCpuoHn",
-    "https://drive.google.com/uc?id=130Tv10j7JPZNaFP5RzuJ4fs1STzxLcpa",
-    "https://drive.google.com/uc?id=139c3KZsKzpFzhBpVUJI14unIyOTvdbXq",
-    "https://drive.google.com/uc?id=13bqtT4Ee7jKsQ9Lt7NG7qenKeKCz51Ji",
-    "https://drive.google.com/uc?id=14MaSmAOGu88k3pb7VeWHvX9-3PoHoEOn",
-    "https://drive.google.com/uc?id=14_6TY5WIGQ0hunYrJbNgavVEFRDsAgbj",
-    "https://drive.google.com/uc?id=14MaSmAOGu88k3pb7VeWHvX9-3PoHoEOn"
+    "https://i.imgur.com/DEBRSER.mp4",
+		"https://i.imgur.com/8jJJcfA.mp4",
+                "https://i.imgur.com/hc8Ed6F.mp4",
+                "https://i.imgur.com/9OlKrSQ.mp4",
+                "https://i.imgur.com/rPOCiNG.mp4",
+                "https://i.imgur.com/LMx3GRL.mp4",
+                "https://i.imgur.com/EpSBt3r.mp4",
+                "https://i.imgur.com/1iaf4A8.mp4",
+                "https://i.imgur.com/36e6ZGT.mp4"
   ];
 
   var callback = () => {
