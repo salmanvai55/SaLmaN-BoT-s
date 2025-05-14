@@ -82,8 +82,8 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
 (event.body.toLowerCase() == "স্টপ") ||
 (event.body.toLowerCase() == "stop") ||
       (event.body.toLowerCase() == "চুপ") ||
-      (event.body.toLowerCase() == "থাম")||
-(event.body.toLowerCase() == "tham")) {
+      (event.body.toLowerCase() == "chup")||
+(event.body.toLowerCase() == "Chup")) {
      return api.sendMessage("-না আমি চুপ থাকবো না-😼-বস 𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 আমারে কথা বলতে বলছে-🥱🥷", threadID);
    };
 
@@ -275,7 +275,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("️চিন্তা করো কেন আমি তো আছি🫶/nতোমাকে রাইকে ভালোবাসবো", threadID);
    };
 
-   if ((event.body.toLowerCase() == "gf daw") || (event.body.toLowerCase() == "bf daw")) {
+   if ((event.body.toLowerCase() == "gf daw bot") || (event.body.toLowerCase() == "bf daw bot")) {
      return api.sendMessage("খালি কি তোরাই পেম করবি আমার বস ফারহান কেউ একটা gf দে<🔪😒", threadID);
    };
    
@@ -363,7 +363,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("আমার বস ফারহান কে চোখে দেখো না নাকি__😒🥱", threadID);
    };
 
-   if ((event.body.toLowerCase() == "jamay daw") || (event.body.toLowerCase() == "Jamay daw")) {
+   if ((event.body.toLowerCase() == "jamay daw bot") || (event.body.toLowerCase() == "Jamay daw bot")) {
      return api.sendMessage("আমার বস ফারহান কে চোখে দেখো না নাকি__😒🥱", threadID);
    };
 
@@ -383,8 +383,8 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("ইস তোদের নিয়ে আর পারলাম না, 🫵🏻😼এতক্ষণ বট বট করে, 😒😼.                   এখন আবার জান্নাত ম্যাডাম কে ডাকস,🤦🏻পারলে জান্নাত ম্যাডাম কে একটা বিএফ খুঁজে দে, 🔪😼", threadID);
    };
 
-   if ((event.body.toLowerCase() == "does the bot love me") || (event.body.toLowerCase() == "does the bot love me")) {
-     return api.sendMessage("Yes <3", threadID);
+   if ((event.body.toLowerCase() == "Nila") || (event.body.toLowerCase() == "nila")) {
+     return api.sendMessage("বাড়িতে খাই ঝাটার বাড়ি, ফেসবুকে সে অ্যাটিটিউড নারী,😒🤣", threadID);
    };
 
    if ((event.body.toLowerCase() == "basar sobai kmon ache") || (event.body.toLowerCase() == "Basar sobai kmon ache") ||
