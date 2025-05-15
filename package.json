@@ -46,7 +46,6 @@
         "nayan-apis-server": "^2.4.6",
         "nayan-imgur-upload-api": "^0.0.1-security",
         "nayan-imgur-upload-apis": "^2.0.2",
-        "nayan-videos-downloader": "^0.1.5",
         "node-cmd": "^5.0.0",
         "node-cron": "^3.0.2",
         "node-fetch": "^3.3.1",
@@ -83,4 +82,4 @@
         "youtube-search-api": "^1.1.1",
         "ytdl-core": "^4.11.4"
     }
-}
+    }
