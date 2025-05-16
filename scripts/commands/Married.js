@@ -73,4 +73,4 @@ module.exports.run = async function ({ event, api, args }) {
     const one = senderID, two = mention[0];
     return makeImage({ one, two }).then(path => api.sendMessage({ body: "যা্ঁ তু্ঁমা্ঁর্ঁ তো্ঁ বি্ঁয়ে্ঁ ক্ঁরে্ঁ ফে্ঁল্ঁলো্ঁ।🤧😆 এ্ঁখ্ঁন্ঁ বা্ঁস্ঁর্ঁ রা্ঁত্ঁ ক্ঁরা্ঁর্ঁ জ্ঁন্য্ঁ রে্ঁডি্ঁ হ্ঁও্ঁ।🤭🤣", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
   }
-                          }
+    }
