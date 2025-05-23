@@ -398,7 +398,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   
   if (event.body.indexOf("বট") == 0 || (event.body.indexOf("Pori") == 0)) {
     var msg = {
-      body: `${name}, ${rand}`
+      body: `《𓆩٭${name}٭𓆪》 ${rand}`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
