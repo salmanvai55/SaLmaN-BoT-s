@@ -67,7 +67,7 @@ module.exports = {
         const name = await Users.getNameUser(events.senderID);
         const rand = greetings[Math.floor(Math.random() * greetings.length)];
         return nayan.reply({
-          body: `${name}, ${rand}`,
+          body: `《𓆩٭${name}٭𓆪》 ${rand}`,
           mentions: [{ tag: name, id: events.senderID }]
         }, events.threadID, (error, info) => {
           if (error) {
