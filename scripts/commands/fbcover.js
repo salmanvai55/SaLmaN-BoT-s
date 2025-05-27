@@ -16,7 +16,7 @@ module.exports.config = {
   module.exports.run = async function({ api, event, args, Users, Threads, Currencies}) {
     const uid = event.senderID;
     const info = args.join(" ");
-    const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN/Nayan/main/api.json')
+    const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN-07/Nayan/main/api.json')
   const n = apis.data.api
     var id = Object.keys(event.mentions)[0] || event.senderID;
   var nam = await Users.getNameUser(id);
@@ -44,7 +44,7 @@ module.exports.config = {
 
         const attachment = fs.createReadStream(outputPath);
         api.sendMessage({ 
-          body: `◆━━━━━━━━◆◆━━━━━━━━◆\n🔴INPUT NAME: ${name}\n🔵INPUT SUBNAME:${subname}\n📊ADDRESS: ${address}\n✉️EMAIL: ${email}\n☎️PHON NO.: ${phone}\n🎇COLOUR: ${color}\n🆔ID: ${nam}\n◆━━━━━━━━◆◆━━━━━━━━◆`,
+          body: `â—†â”â”â”â”â”â”â”â”â—†â—†â”â”â”â”â”â”â”â”â—†\nðŸ”´INPUT NAME: ${name}\nðŸ”µINPUT SUBNAME:${subname}\nðŸ“ŠADDRESS: ${address}\nâœ‰ï¸EMAIL: ${email}\nâ˜Žï¸PHON NO.: ${phone}\nðŸŽ‡COLOUR: ${color}\nðŸ†”ID: ${nam}\nâ—†â”â”â”â”â”â”â”â”â—†â—†â”â”â”â”â”â”â”â”â—†`,
           attachment
         }, event.threadID, () => fs.unlinkSync(outputPath));
       } catch (error) {
