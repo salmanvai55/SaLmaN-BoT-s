@@ -1,6 +1,6 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-  name: "Pori",
+  name: "Ayra",
   version: "0.0.3",
   permission: 0,
   prefix: false,
@@ -396,7 +396,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("-আলহামদুলিল্লাহ-🌺-অনেক অনেক ভালো আছে তোমার বাসার সবাই কেমন আছে-💝🌻", threadID);
    };
   
-  if (event.body.indexOf("বট") == 0 || (event.body.indexOf("Pori") == 0)) {
+  if (event.body.indexOf("বট") == 0 || (event.body.indexOf("Ayra") == 0)) {
     var msg = {
       body: `《𓆩٭${name}٭𓆪》 ${rand}`
     }
