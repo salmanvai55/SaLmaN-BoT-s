@@ -19,17 +19,17 @@ const time = process.uptime(),
     seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png", 
+var link = ["https://i.imgur.com/NFB7Xsk.jpeg", 
             
-            "https://i.postimg.cc/JhxzskNn/Snapchat-2014418092.jpg", 
+            "https://i.imgur.com/NFB7Xsk.jpeg", 
             
-            "https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png",
+            "https://i.imgur.com/NFB7Xsk.jpeg",
 
-"https://i.postimg.cc/8cJpXXqJ/Snapchat-670991066.jpg",
+"https://i.imgur.com/NFB7Xsk.jpeg",
             
-            "https://i.postimg.cc/KvRXLsTB/FB-IMG-1709702111184.jpg"];
+            "https://i.imgur.com/NFB7Xsk.jpeg"];
 
-var callback = () => api.sendMessage({body:`╭•┄┅══𓆩𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍𓆪══┅┄•╮\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸআসসালামু আলাইকুমꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿\n
+var callback = () => api.sendMessage({body:`╭•┄┅══𝐒𝐌–𝐒𝐀𝐋𝐌𝐀𝐍══┅┄•╮\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸআসসালামু আলাইকুমꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿\n
 
 •—»গ্রুপ এর কিছু রুলস আছে, এগুলো হয়তো অনেকেই জানেন না যারা জানে না তারা জেনে রাখেন💥
 
